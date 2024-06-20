@@ -43,13 +43,17 @@ function Fruit({ handlePriceChange, week, setWeek }) {
     navigate('/');
   };
 
+  const handleResetWeek = () => {
+    setWeek(1); // 초기값으로 설정할 주차를 1로 설정
+  };
+
   return (
     <div>
       <h1>랜덤 과일 가격 게임 - {week}주차</h1>
       <div className="button-container">
         <button onClick={handlePriceButtonClick}>가격 변동</button>
         <button onClick={handleQuizButtonClick}>퀴즈로 이동</button>
-        <button onClick={handleHomeClick}>홈으로 이동</button>
+        <button onClick={handleResetWeek}>주차 초기화</button>
       </div>
       <div className="fruit-grid">
         {fruits.map((fruit, index) => (
@@ -62,6 +66,11 @@ function Fruit({ handlePriceChange, week, setWeek }) {
           </div>
         ))}
       </div>
+      <div className='home-button'>
+      <button onClick={handleHomeClick}>
+        <span role="img" aria-label="집">🏠</span>
+      </button>
+    </div>
     </div>
   );
 }
