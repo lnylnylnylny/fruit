@@ -51,7 +51,7 @@ const Quiz = ({ currentQuestionIndex, setCurrentQuestionIndex, handleHiddenCard 
         </button>
       ))}
       {showAnswer && (
-        <div>
+        <div className="answer">
           <h3>정답: {questions[currentQuestionIndex].answer}</h3>
           <button onClick={handleNextClick}>되돌아가기</button>
         </div>

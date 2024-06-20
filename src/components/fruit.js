@@ -46,9 +46,11 @@ function Fruit({ handlePriceChange, week, setWeek }) {
   return (
     <div>
       <h1>랜덤 과일 가격 게임 - {week}주차</h1>
-      <button onClick={handlePriceButtonClick}>가격 변동</button>
-      <button onClick={handleQuizButtonClick}>퀴즈로 이동</button>
-      <button onClick={handleHomeClick}>홈으로 이동</button>
+      <div className="button-container">
+        <button onClick={handlePriceButtonClick}>가격 변동</button>
+        <button onClick={handleQuizButtonClick}>퀴즈로 이동</button>
+        <button onClick={handleHomeClick}>홈으로 이동</button>
+      </div>
       <div className="fruit-grid">
         {fruits.map((fruit, index) => (
           <div key={index} className="fruit-item">
