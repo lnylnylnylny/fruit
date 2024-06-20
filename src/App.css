@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.fruit-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fruit-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  width: 100px;
+}
+
+.fruit-emoji {
+  font-size: 2em;
+}
+
+.fruit-name {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.fruit-price {
+  display: block;
+  margin-top: 5px;
+}
